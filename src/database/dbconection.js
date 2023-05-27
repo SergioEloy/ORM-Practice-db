@@ -17,7 +17,7 @@ const sequelize_1 = require("sequelize");
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-exports.sequelize = new sequelize_1.Sequelize("postgres://postgres:totito12@localhost:5432/short-url");
+exports.sequelize = new sequelize_1.Sequelize("postgres://postgres:totito12@localhost:5432/postgres");
 const Conection = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield exports.sequelize.authenticate();

@@ -5,7 +5,7 @@ const app: Express = express();
 app.use(express.json());
 
 export const sequelize = new Sequelize(
-  "postgres://postgres:totito12@localhost:5432/short-url"
+  "postgres://postgres:totito12@localhost:5432/postgres"
 );
 
 export const Conection = async () => {
